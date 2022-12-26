@@ -1,0 +1,449 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+:root{
+    --vermelho-escuro: rgb(199, 53, 0);
+    --cinza: rgb(50, 50, 50);
+    --cinza-claro: rgb(180, 180 ,180)
+}
+
+.text-bg-primary{
+    background: linear-gradient(45deg, rgb(0,0,100), rgb(0,0,250));
+}
+
+.text-bg-danger{
+    background: linear-gradient(45deg, rgb(100,0,0), rgb(250,0,0));
+}
+
+.text-bg-info{
+    background: linear-gradient(45deg, rgb(0,100,100), rgb(0,250,250));
+}
+
+.text-bg-warning{
+    background: linear-gradient(45deg, rgb(100,100,0), rgb(250,250,0));
+}
+
+main{
+    background-image: url(imagens/45_degree_fabric.webp);
+}
+
+h1{
+    font-family: 'Poiret One', cursive;
+    font-size: 6rem !important;
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    margin-bottom: 0rem !important;
+}
+
+h2{
+    font-family: 'Poiret One', cursive;
+    font-size: 4rem !important;
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    color: black;
+}
+
+h3{
+    font-family: 'Poiret One', cursive;
+    font-size: 2rem !important;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 100;
+    padding: 1.2rem 0 1.2rem 6%;
+}
+
+h4{
+    font-family: 'Poiret One', cursive;
+    display: flex;
+    justify-content: flex-center;
+    font-weight: 100;
+    padding: 1.2rem 0 1.2rem 6%;
+    font-size: 1.8rem !important;
+}
+
+p{
+    font-family: 'Nunito Sans', sans-serif;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-bottom: 0rem !important;
+    font-size: 1.2rem;
+}
+
+#section-header{
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+#techs-subtitle{
+    justify-content: center;
+}
+
+.techs{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.badge {
+    margin-right: 0.5rem !important;
+    margin-left: 0.5rem !important;
+    width: 5rem !important;
+    height: 2rem;
+    padding-top: 0.6rem !important;
+}
+
+.container-projects{
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.div-titulo-secao{
+    background-color: var(--vermelho-escuro);
+    color: white;
+}
+
+.item-row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background-image: url(imagens/45_degree_fabric.webp);
+    max-height: 50rem;
+}
+
+#item-row-techs{
+    padding-bottom: 3rem;
+}
+
+.description-div{
+    width:50%;
+    position: relative;
+    height:100%;
+}
+
+.minha-foto-div{
+    width:50%;
+    position: relative;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: stretch !important;
+    justify-content: space-evenly;
+    align-content: stretch !important;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.image{
+    object-fit: cover;
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: stretch;
+}
+
+#my-image{
+    margin-top: 1.5rem;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px
+
+}
+
+.image-projects{
+    padding: 0rem;
+    width: 100%;
+    height: auto;
+}
+
+.item-row-left-to-right{
+    flex-direction: row;
+}
+
+.item-row-right-to-left{
+    flex-direction: row-reverse;
+}
+
+.self-description{
+    font-weight: 500;
+}
+
+header{
+    display:flex;
+    align-items: center;
+}
+
+.navbar{
+    height: 100%;
+    display: flex;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+#navbar-div{
+    width: 100%;
+    background-color:var(--cinza);
+    color: white;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    z-index: 999;
+}
+
+.navbar-link:hover{
+    background-color: var(--vermelho-escuro);
+}
+
+#intra-specific-navbar, #inter-specific-navbar{
+    display: flex;
+    padding: 0rem;
+}
+
+.navbar-link{
+    padding: 0rem 1rem;
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center
+}
+
+.black-line-div{
+    display:flex;
+    justify-content: center;
+}
+
+.black-line{
+    border:none;
+    background-color: black;
+    height:0.15rem;
+    width: 40%;
+    margin: 3rem 0;
+}
+
+.description{
+    padding:6% 10%;
+    line-height: 3rem;
+    text-align:justify;
+}
+
+#subtitle{
+    padding-bottom: 2rem;
+}
+
+#form-row{
+    padding: 0rem 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+#form-column{
+    padding: 0rem 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-name{
+    padding-right: 1rem;
+}
+
+#form-email{
+    padding-left: 1rem;
+}
+
+#button-div{
+    display: flex;
+    justify-content: end;
+    padding-right: 15%;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+.btn-primary{
+    background-color: var(--vermelho-escuro) !important;
+    border: none !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+}
+
+a, a:link, a:visited, a:hover, a:active{
+    color: white !important;
+    text-decoration: none !important;
+}
+
+footer{
+    height:10rem;
+    background-color: var(--cinza);
+}
+
+#footer-links-div{
+    padding: 3rem;
+    color: var(--cinza-claro);
+}
+
+#description-contact{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.description-projects{
+    padding: 0% 5%;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.image-projects{
+    min-width: 350px;
+}
+
+#projects{
+    padding-bottom: 2rem;
+}
+
+#div-titulo-secao-projetos{
+    margin-bottom: 2rem;
+}
+
+#links{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+}
+
+.link{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: black;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+@media (min-width: 1069px) and (max-width: 1200px){
+    #main-description{
+        line-height: 2.5rem;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1069px){
+    #main-description{
+        line-height: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+    .container-projects{
+        padding-bottom: 2rem;
+    }    
+}
+
+@media screen and (max-width: 991px){
+
+    h1{
+        font-size: 5rem !important;
+    }
+
+    h2{
+        font-size: 3rem !important;
+    } 
+
+    .techs-projects{
+        display: block;
+    }
+
+    .techs-projects *{
+        margin-bottom: 0.5rem !important;
+    }
+
+    #main-description{
+        padding: 6% 10% 6% 0%;
+        line-height: 2rem;
+    }
+
+    .item-row-left-to-right, .item-row-right-to-left{      
+        flex-direction: column;
+        align-content: space-around;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 633px) and (max-width: 756px){
+
+    #main-description{
+        padding: 6% 10% 6% 0%;
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 633px){
+
+    h1{
+        font-size: 4rem !important;
+    }
+
+    h2{
+        font-size: 3rem !important;
+    }
+
+    h3{
+        font-size: 1.5rem !important;
+    }
+
+    #navbar-div{
+        height: 4rem;
+    }
+
+    #main-description{
+        padding: 10% 0% 5% 0%;
+        line-height: 1.5rem;
+        margin-left: -5rem;
+        margin-right: -5rem;
+    }
+
+    #main-image-description-div{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+
+    #section-header {
+        padding-top: 6rem;
+        padding-bottom: 0rem;
+    }
+
+    .projects-image-div, .projects-description-div{
+        width: 100% !important;
+    }
+
+    .image-projects{
+        max-width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    #links{
+        flex-direction: column;
+    }
+}
