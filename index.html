@@ -7,21 +7,93 @@
         <meta name="description" content="This is Lucas Freitas 'Bariand' Cordeiros's portfolio webpages, containing programming and web design projects, as well as writting projects and previous biology scientific works done years prior.">
         <meta name="keywords" content="Lucas Freitas Cordeiro, Bariand, HTML, CSS, JavaScript, C#, asp.net core, asp.net 6, web design, logo design, GIMP, graphics gale, programmer, developer">
         <meta name="author" content="Lucas Freitas Cordeiro">
-        <link rel="stylesheet" href="stylesheet.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet.css">    
     </head>
     <body>
         <header>
             <div id="navbar-div">
-                <nav class="navbar" id="intra-specific-navbar">
-                    <a class="navbar-link" href="#section-header"><p>Início</p></a>
-                    <a class="navbar-link" href="#about-me"><p>Sobre mim</p></a>
-                    <a class="navbar-link" href="#projects"><p>Projetos</p></a>
+                <nav>
+                    <div class="intra-navbar-div left-menu">
+                        <a class="navbar-link" href="#section-header">
+                            <p class="pt-br">Início</p>
+                            <p class="eng">Home</p>
+                        </a>
+                        <a class="navbar-link" href="#about-me">
+                            <p class="pt-br">Sobre</p>
+                            <p class="eng">About</p>
+                        </a>
+                        <a class="navbar-link" href="#projects">
+                            <p class="pt-br">Projetos</p>
+                            <p class="eng">Projects</p>
+                        </a>                 
+                    </div>
+                    <div class="intra-navbar-div right-menu dropdown cog-menu">
+                        <span id="cog-span"><a class="navbar-link cog-link"><img src="imagens/cogwheel-white.svg" style="height: 2rem" id="cog-img"/></a></span>
+                        <div class="dropdown-content" id="cog-dropdown">
+                            <div class="form-check form-switch">
+                                <div class="switch-span">
+                                    <label class="form-check-label" for="flexSwitchCheck1">
+                                        <p class="pt-br">-CRT Linhas-</p>
+                                        <p class="eng">-CRT Scanlines-</p>
+                                    </label>
+                                </div>
+                                <div class="switch-span">
+                                    <p class="switch-text">0</p>
+                                        <input class="form-check-input" type="checkbox" checked id="flexSwitchCheck1">
+                                    <p class="switch-text">I</p>
+                                </div>                               
+                            </div>
+
+                            <div class="form-check form-switch">
+                                <div class="switch-span">
+                                    <label class="form-check-label" for="flexSwitchCheck2">
+                                        <p class="pt-br">-CRT Efeito-</p>
+                                        <p class="eng">-CRT FX-</p>
+                                    </label>
+                                </div>
+                                <div class="switch-span">
+                                    <p class="switch-text">0</p>
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheck2">
+                                    <p class="switch-text">I</p>
+                                </div>                               
+                            </div>
+
+                            <div class="form-check form-switch">
+                                <div class="switch-span">
+                                    <label class="form-check-label" for="flexSwitchCheck3">
+                                        <p class="pt-br">-Linguagem-</p>
+                                        <p class="eng">-Language-</p>
+                                    </label>
+                                </div>
+                                <div class="switch-span">
+                                    <img class="switch-text" src="imagens/brazilIcon.svg">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheck3">
+                                    <img class="switch-text" src="imagens/UKIcon.svg">                    
+                                </div> 
+                            </div>
+
+                            <div class="form-check form-switch">
+                                <div class="switch-span">
+                                    <label class="form-check-label" for="flexSwitchCheck4">
+                                        <p class="pt-br">-Tech-</p>
+                                        <p class="eng">-Tech-</p>
+                                    </label>
+                                </div>
+                                <div class="switch-span">
+                                    <p class="switch-text">0</p>
+                                        <input class="form-check-input" type="checkbox" checked id="flexSwitchCheck4">
+                                    <p class="switch-text">I</p>                
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
                 </nav>
             </div>    
         </header>
@@ -31,53 +103,67 @@
                 <div class="black-line-div">
                     <div class="black-line"></div>
                 </div>        
-                <h2 id="subtitle">Web Dev : Escritor : Biólogo</h2>
-                <a link="https://cordeirolf.bio@gmail.com"><p class="link">E:mail:cordeirolf.bio@gmail.com</p></a>
+                <h2 class="pt-br">Web Dev : Estudante de ADS : Estudante de Eletrônica</h2>
+                <h2 class="pt-br">Biólogo : MSc e PhD em Ciências Fisiológicas</h2>
+                <h2 class="eng">Web Dev : SDA student : Electronics student</h2>
+                <h2 class="eng">Biologist : MSc & PhD in Fisiological Sciences</h2>
+                <a link="https://cordeirolf.bio@gmail.com"><p class="link-1">E-mail:cordeirolf.bio@gmail.com</p></a>
                 <div id="links">
-                    <a href="https://linkedin.com/in/lucasfreitascordeiro" target="_blank"><p class="link">Linkedin</p></a><a href="https://github.com/bariand" target="_blank"><p class="link">Github</p></a>
+                    <a href="https://linkedin.com/in/lucasfreitascordeiro" target="_blank"><p class="link">Linkedin</p></a>
+                    <a href="https://github.com/bariand" target="_blank"><p class="link">Github</p></a>
+                    <a href="http://lattes.cnpq.br/3322914019440460" target="_blank"><p class="link">Lattes</p></a>
                 </div>               
             </section>
             <section id="about-me">
                 <div class="div-titulo-secao">
-                    <h3 class="titulo-secao">Quem sou?</h3>
+                    <h3 class="titulo-secao pt-br">Quem sou?</h3>
+                    <h3 class="titulo-secao eng">Who am I?</h3>
                 </div>
                 <div class="container-fluid">
-                    <div class="row item-row" id="main-image-description-div">
+                    <div class="row item-row image-description-div">
                         <div class="col-6 description-div" >               
-                            <p class="description" id="main-description">
-                                Olá! Meu nome é Lucas Freitas Cordeiro, e sou estudante de Análise e Desenvolvimento de Sistemas pela UNIASSELVI. Atuo na área de desenvolvimento para web, tanto em back como front-end. Sou oriúndo de Pelotas, no estado do Rio Grande do Sul, Brasil. Também sou biólogo, mas mudei para a área de tecnologia em definitivo. Acredito na ideia de que um produto bom é aquele que agrega valor à vida das pessoas. E então: vamos agregar juntos?
+                            <p class="description main-description pt-br">
+                                Olá! Meu nome é Lucas Freitas Cordeiro, e sou estudante de Análise e Desenvolvimento de Sistemas pela UNIASSELVI e de Técnico em Eletrônica pelo CPET. Sou oriúndo de Pelotas, no estado do Rio Grande do Sul, Brasil. Também sou biólogo e escritor amador, mas mudei para a área de tecnologia em definitivo. Trabalhei por quase um ano na Foursys como estagiário .NET, onde frequentei o bootcamp da empresa e atuei tanto no front como no back-end. Acredito na ideia de que um produto bom é aquele que agrega valor à vida das pessoas. E então: vamos agregar juntos?
+                            </p>
+                            <p class="description main-description eng">
+                                Hello! My name is Lucas Freitas Cordeiro and I am an Analysis and Systems Development student at UNIASSELVI University. I am a brazilian, from Pelotas, Rio Grande do Sul. I am a biologist, having transitioned into the area of technology for good, and I am also an amateur writer. I worked for almost a year at Foursys as a .NET intern, where I attended the company's bootcamp and worked as a front and back-end web developer. I believe in creating products that add value to the lives of other people. Now, let us start adding together?
                             </p>
                         </div>
                         <div class="col-6 minha-foto-div">
-                            <img src="imagens/minha-foto.jpg" class="image" id="my-image">
+                            <img src="imagens/minha-foto.jpg" class="image my-image">
                         </div>            
                     </div>
                     <div class="row item-row">
-                        <h4 id="techs-subtitle">Tecnologias que conheço:</h4>
+                        <h4 class="techs-subtitle pt-br">Tecnologias que conheço:</h4>
+                        <h4 class="techs-subtitle eng">Technologies I know:</h4>
                     </div>
-                    <div class="row item-row" id="item-row-techs">
-                        <div class="techs"><span class="badge rounded-pill text-bg-primary">.Net 6 MVC</span><span class="badge rounded-pill text-bg-danger">HTML 5</span><span class="badge rounded-pill text-bg-info">CSS 3</span><span class="badge rounded-pill text-bg-primary">C# 10</span><span class="badge rounded-pill text-bg-warning">Javascript</span></div>
+                    <div class="row item-row item-row-techs">
+                        <div class="techs"><span class="badge rounded-pill text-bg-primary"><p class="white-pill">Asp.Net Core</p></span><span class="badge rounded-pill text-bg-danger"><p class="white-pill">HTML</p></span><span class="badge rounded-pill text-bg-info"><p class="white-pill">CSS</p></span><span class="badge rounded-pill text-bg-primary"><p class="white-pill">C#</p></span><span class="badge rounded-pill text-bg-warning"><p class="white-pill">JS</p></span><span class="badge rounded-pill text-bg-warning"><p class="white-pill">JQ</p></span></div>
                     </div>
                 </div>    
             </section>
             <section id="projects">
-                <div class="div-titulo-secao" id="div-titulo-secao-projetos">
-                    <h3 class="titulo-secao">Meus Projetos</h3>
+                <div class="div-titulo-secao div-titulo-secao-projetos">
+                    <h3 class="titulo-secao pt-br">Meus Projetos</h3>
+                    <h3 class="titulo-secao eng">My Projects</h3>
                 </div>
                 <!-- projeto 1 -->
                 <div class="container-fluid container-projects">
                     <div class="row item-row item-row-left-to-right"> 
                         <div class="col-6 projects-image-div">
-                            <img src="imagens/michele-bolsas-index.png" class="image image-projects">                 
+                            <img src="imagens/michele-bolsas-index.png" class="image image-projects image-project1">                 
                         </div>        
                         <div class="col-6 description-div projects-description-div">
                             <h4>Michele Bolsas Personalizadas</h4>
-                            <p class="description description-projects">
+                            <p class="description description-projects pt-br">
                                 Este é um site que estou criando para ajudar minha esposa nos negócios dela. Ele se encontra em desenvolvimento.
                             </p>
+                            <p class="description description-projects eng">
+                                This is a website I'm creating to help my wife with her small business. It is currently under development.
+                            </p>
                             <div class="techs techs-projects">
-                                <span class="badge rounded-pill text-bg-danger">HTML 5</span>
-                                <span class="badge rounded-pill text-bg-info">CSS 3</span>
+                                <span class="badge rounded-pill text-bg-danger"><p class="white-pill">HTML</p></span>
+                                <span class="badge rounded-pill text-bg-info"><p class="white-pill">CSS</p></span>
                             </div>
                         </div>    
                     </div>
@@ -90,20 +176,23 @@
                     <div class="row item-row item-row-right-to-left"> 
                         <div class="col-6 projects-image-div">
                             <a href="https://github.com/Bariand/Projeto-FourGold" target=”_blank”>
-                                <img src="imagens/img-four-gold.png" class="image image-projects">
+                                <img src="imagens/img-four-gold.png" class="image image-projects image-project2">
                             </a>           
                         </div>        
                         <div class="col-6 description-div projects-description-div">
                             <h4>Four Gold</h4>
-                                <p class="description description-projects">
-                                    Este foi um projeto desenvolvido em grupo e a avaliação final de meu estágio na Foursys. 
+                                <p class="description description-projects pt-br">
+                                    Este foi um projeto desenvolvido em grupo e a avaliação final do Fourcamp da Foursys. 
+                                </p>
+                                <p class="description description-projects eng">
+                                    This was a team project and also the final evaluation of Foursys' Fourcamp.
                                 </p>
                             <div class="techs techs-projects">
-                                <span class="badge rounded-pill text-bg-primary">.Net 6 MVC</span>
-                                <span class="badge rounded-pill text-bg-danger">HTML 5</span>
-                                <span class="badge rounded-pill text-bg-info">CSS 3</span>
-                                <span class="badge rounded-pill text-bg-primary">C# 10</span>
-                                <span class="badge rounded-pill text-bg-warning">Javascript</span>
+                                <span class="badge rounded-pill text-bg-primary"><p class="white-pill">Asp.Net Core</p></span>
+                                <span class="badge rounded-pill text-bg-danger"><p class="white-pill">HTML</p></span>
+                                <span class="badge rounded-pill text-bg-info"><p class="white-pill">CSS</p></span>
+                                <span class="badge rounded-pill text-bg-primary"><p class="white-pill">C#</p></span>
+                                <span class="badge rounded-pill text-bg-warning"><p class="white-pill">JS</p></span>
                             </div>
                         </div>    
                     </div>
@@ -116,20 +205,23 @@
                     <div class="row item-row item-row-left-to-right"> 
                         <div class="col-6 projects-image-div">
                             <a href="https://github.com/Bariand/FourBlog_Lucas" target=”_blank”>
-                                <img src="imagens/img-four-blog.png" class="image image-projects">
+                                <img src="imagens/img-four-blog.png" class="image image-projects image-project3">
                             </a>                
                         </div>        
                         <div class="col-6 description-div projects-description-div">
                             <h4>Four Blog</h4>
-                            <p class="description description-projects">
+                            <p class="description description-projects pt-br">
                                 Projeto individual de meu estágio na Foursys que tinha como objetivo contruir um blog. 
                             </p>
+                            <p class="description description-projects eng">
+                                Individual project of my internship at Foursys that aimed at building a blog from scratch. 
+                            </p>
                             <div class="techs techs-projects">
-                                <span class="badge rounded-pill text-bg-primary">.Net 6 MVC</span>
-                                <span class="badge rounded-pill text-bg-danger">HTML 5</span>
-                                <span class="badge rounded-pill text-bg-info">CSS 3</span>
-                                <span class="badge rounded-pill text-bg-primary">C# 10</span>
-                                <span class="badge rounded-pill text-bg-warning">Javascript</span>
+                                <span class="badge rounded-pill text-bg-primary"><p class="white-pill">Asp.Net Core</p></span>
+                                <span class="badge rounded-pill text-bg-danger"><p class="white-pill">HTML</p></span>
+                                <span class="badge rounded-pill text-bg-info"><p class="white-pill">CSS</p></span>
+                                <span class="badge rounded-pill text-bg-primary"><p class="white-pill">C#</p></span>
+                                <span class="badge rounded-pill text-bg-warning"><p class="white-pill">JS</p></span>
                             </div>
                         </div>    
                     </div>
@@ -142,20 +234,23 @@
                     <div class="row item-row item-row-right-to-left"> 
                         <div class="col-6 projects-image-div">
                             <a href="https://github.com/Bariand/FourTask_Lucas" target="_blank">
-                                <img src="imagens/img-four-task.png" class="image image-projects">
+                                <img src="imagens/img-four-task.png" class="image image-projects image-project4">
                             </a>                                      
                         </div>        
                         <div class="col-6 description-div projects-description-div">
                             <h4>Four Task</h4>
-                            <p class="description description-projects">
+                            <p class="description description-projects pt-br">
                                 Outro projeto individual da Foursys, desta vez o objetivo era criar um site de organização de grupos de trabalho e suas tarefas.  
                             </p>
+                            <p class="description description-projects eng">
+                                Another individual project at Foursys, this time the goal was to create a site for organizing working groups and their tasks.  
+                            </p>
                             <div class="techs techs-projects">
-                                <span class="badge rounded-pill text-bg-primary">.Net 6 MVC</span>
-                                <span class="badge rounded-pill text-bg-danger">HTML 5</span>
-                                <span class="badge rounded-pill text-bg-info">CSS 3</span>
-                                <span class="badge rounded-pill text-bg-primary">C# 10</span>
-                                <span class="badge rounded-pill text-bg-warning">Javascript</span>
+                                <span class="badge rounded-pill text-bg-primary"><p class="white-pill">Asp.Net Core</p></span>
+                                <span class="badge rounded-pill text-bg-danger"><p class="white-pill">HTML</p></span>
+                                <span class="badge rounded-pill text-bg-info"><p class="white-pill">CSS</p></span>
+                                <span class="badge rounded-pill text-bg-primary"><p class="white-pill">C#</p></span>
+                                <span class="badge rounded-pill text-bg-warning"><p class="white-pill">JS</p></span>
                             </div>
                         </div>    
                     </div>
@@ -168,13 +263,16 @@
                     <div class="row item-row item-row-left-to-right"> 
                         <div class="col-6 projects-image-div">
                             <a href="https://github.com/Bariand/Design_Thinking" target="_blank">
-                                <img src="imagens/img-design-thinking.png" class="image image-projects">
+                                <img src="imagens/img-design-thinking.png" class="image image-projects image-project5">
                             </a>                 
                         </div>        
                         <div class="col-6 description-div projects-description-div">
                             <h4>Design Thinking</h4>
-                            <p class="description description-projects">
-                                Dois projetos, um em grupo e outro individual de Design Thinking, tudo construído no website do Miro
+                            <p class="description description-projects pt-br">
+                                Dois projetos, um em grupo e outro individual de Design Thinking, tudo construído no website do Miro.
+                            </p>
+                            <p class="description description-projects eng">
+                                Two Design Thinking projects, one developed in a team and the the other done individualy, both built on Miro's website.
                             </p>
                         </div>    
                     </div>
@@ -185,5 +283,6 @@
             Citations will be inserted here as needed
         </footer> -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     </body>
 </html>
